@@ -1,9 +1,8 @@
-let btn = document.getElementById('btn');
-let colorSelect = document.getElementById('colorSelect');
-
-btn.addEventListener('click', function () {
+function removeSelectedOption() {
+    let colorSelect = document.getElementById('colorSelect');
     let selectedIndex = colorSelect.selectedIndex;
-    if (selectedIndex !== -1) {  // Ensure something is selected
+    
+    if (selectedIndex !== -1) { // Ensure an option is selected before removing
         colorSelect.remove(selectedIndex);
     }
-});
+}
